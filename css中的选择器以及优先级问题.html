@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style rel="stylesheet/css" lang="scss" scoped>
+    .header{
+    float: left;
+    }
+    .footer{
+        float: left;
+    }
+    p[title]{
+        color: red;
+    }
+    .wei:after{
+       content: '我在它后面';
+    }
+    .wei:before{
+       content: '我在它前面';
+    }
+    .footer a{
+        text-decoration: none;
+    }
+    .footer a:hover{
+        background-color: blue;
+    }
+    .footer a:active{
+        background-color: brown;
+    }
+    .footer a:link{
+        background-color: green;
+    }
+    .footer a:visited{
+        background-color: yellow;
+    }
+    input:focus{
+    border-radius: 50%;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+   <p>css中有以下选择器:</p>
+   <ul>
+       <li>id选择器</li>
+       <li>类选择器</li>
+       <li>元素(标签)选择器</li>
+       <li>后代选择器(即全使用标签名并找到他的子元素)</li>
+       <li>复合选择器(即id和类和元素选择器混杂使用找目标元素)</li>
+       <li>伪类选择器(使用:形式的)</li>
+       <p>常见的伪类有a标签中的,还有before,after</p>
+       <li>属性选择器([title]形式的)</li>
+       <li>兄弟选择器</li>
+       <li>分组选择器(可以选择多个选择器的共同样式)</li>
+       <li>通配符选择器(*)</li>
+   </ul>
+   <p>优先级排序:</p>
+   <ol>
+       <li>!important(用来提升选择器的优先级)</li>
+       <li>内敛样式</li>
+       <li>id选择器</li>
+       <li>类选择器</li>
+       <li>元素选择器</li>
+      <li>子选择器</li>
+      <Li>后代选择器</Li>
+      <li>伪类选择器</li>
+   </ol>
+   </div>
+   <div class="footer">
+  <p title="a">我是id选择器:含有title</p>
+  <p class="wei">我是伪类选择器的应用
+      (顺便提一下:after和::after的区别:
+      ::是伪类而:是伪元素)</p>
+      <a href="#">我是伪类中的应用</a>
+    
+   </div>
+   <input type="text"/>
+</body>
+</html>
